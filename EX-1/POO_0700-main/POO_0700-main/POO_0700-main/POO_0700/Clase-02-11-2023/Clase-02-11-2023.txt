@@ -1,0 +1,91 @@
+Load Balance = 
+
+MONGODB => NO SQL
+
+Al momento de installar herramientas de SQL 
+se esta instalando herramientas de cliente; lo que hace es renderizar 
+de manera sencilla para la interaccion de base de datos.
+
+CMDER MINI
+
+COLLECTION IN DATABASE: 
+
+*Una colección es una lista de objetos construidos 
+desde la misma clase de objeto y que comparten el mismo objeto primario. 
+El objeto de colección contiene siempre el nombre del tipo de objeto con 
+el sufijo Collection. Por ejemplo, para tener acceso a las columnas de una 
+tabla determinada, use el tipo de objeto ColumnCollection. Contiene todos 
+los objetos Column que pertenecen al mismo objeto Table.
+
+*Las BD son flexibles METADATA (COLECCION DE ATRIBUTOS DE UNA CLASE/ENTIDAD CON SUS TIPOS)
+*Es un arreglo de datos de una bd no relacion NOSQL
+
+**PERSISTENCIA DE DATOS**
+
+collection.insert_one({ "Nombre" : " Kevin"}); Nombre es un atributo y se puede ir agregando como ({"Nombre" : " ???", "Telefono" : "***-***"})
+
+
+What is __dict__ method?
+
+*According to python documentation object.__dict__ is A dictionary or other mapping object used to store an object’s (writable) attributes.
+
+*Or speaking in simple words every object in python has an attribute which is denoted by __dict__.
+
+*And this object contains all attributes defined for the object. __dict__ is also called mappingproxy object.
+
+DATOS DE LA CLASE APP PARA CONECTAR A LA DATABASE
+
+ user = "KVJ"
+    password = "Rinnegan2)_("
+    cluster = "cluster.h25bvf7.mongodb.net"
+    query_string = "retryWrites=true&w=majority"
+
+##Connect String
+    uri = "mongodb+srv://{0}:{1}@{2}/?{3}".format(
+    user 
+    , password
+    , cluster 
+    , query_string
+)
+
+
+## "mongodb+srv://KVJ:<password>@cluster.h25bvf7.mongodb.net/?retryWrites=true&w=majority"
+
+#Pymongo = Una Clase Static
+#MongoClient = Metodo Static 
+#URI = Parametro
+ 
+    client = pymongo.MongoClient(uri) 
+
+#Instance DATABASE
+
+    db = client['UNAH']
+
+    Instanciar es mandar a llamar el constructor de una clase
+
+    Los constructores se invocan de manera => NombreConstructor()
+
+
+    EXAMEN I ---> 02/25/2023
+
+
+    
+    def __init__(self, username, password):
+        self.username = username
+        self.password = password
+        print("Objeto creado")
+
+        Este metodo NO ES ESTATICO LO QUE HACE ES QUE PERMITE NO HACER VISIBLE LA INFORMACION DE LA BD
+
+QUE ES UN DOCKER?
+
+Docker es un proyecto de código abierto que automatiza el despliegue de aplicaciones dentro de contenedores de 
+software, proporcionando una capa adicional de abstracción y automatización de virtualización de aplicaciones 
+en múltiples sistemas operativos
+
+
+LINK DE REFERENCIA [https://es.stackoverflow.com/questions/489278/par%C3%A1metros-sin-usar-en-constructor-python]
+
+PARA QUE SIRVE SELF?
+
+TAREA HACER EL METODO ACTUALIZAR DATOS

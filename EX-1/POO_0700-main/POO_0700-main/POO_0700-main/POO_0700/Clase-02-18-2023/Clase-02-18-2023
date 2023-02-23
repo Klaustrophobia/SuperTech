@@ -1,0 +1,24 @@
+# Los metodos update, save, delete son intacias
+
+# Parametros opcionales
+
+
+# CONSTRUCCION DE REPORTE EN UN FORMATO DE [NOMBRE, TELEFONO, TIPO DE ESTUDIANTE]
+# Ira ubicado en la clase de Estudiante debido a que va mas a fin a esta de manera static
+
+# @staticmethod
+# def print_full_report(db):
+# collection = db["Estudiante"]
+
+# for e in collection.find():
+#  r={
+    # "nombre": e.["nombre"]
+    # , "numero": e.["numero"]
+    # , "Tipo_estudiante": e.["tipo_estudiante"]
+    # }
+#  print(r)
+
+
+# Y en la APP.PY le aplicare la manera de 
+
+# Estudiante.print_full_report(db)

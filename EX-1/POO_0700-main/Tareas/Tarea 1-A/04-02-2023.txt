@@ -1,0 +1,10 @@
+Casa (x, y, clientes) donde x, y pertenecen a los R, siendo el num. y mts de construccion de la casa respectivamente.
+
+RETO 1:
+Cliente debe de tener un arreglo de casas.
+
+RETO 2: 
+Contruir un metodo que imprima los mts2 de la casa solo identificando a esta con su ID
+
+
+TAREA REPLICAR LO VISTO EN LA CLASE CON LOS SIGUIENTES 2 EJERCICIOS
